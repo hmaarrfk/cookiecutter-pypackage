@@ -1,3 +1,1 @@
-# -*- coding: utf-8 -*-
-
-"""Main module."""
+"""Main module for {{ cookiecutter.project_name }}."""
