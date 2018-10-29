@@ -1,17 +1,21 @@
 Welcome to {{ cookiecutter.project_name }}'s documentation!
 ======================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+.. mdinclude:: ../README.md
 
-   readme
+Contents
+========
+
+.. toctree::
+   :maxdepth: 1
+
    installation
    usage
    modules
-   contributing
-   {% if cookiecutter.create_author_file == 'y' -%}authors
-   {% endif -%}history
+   CONTRIBUTING
+
+   {% if cookiecutter.create_author_file == 'y' -%}AUTHORS
+   {% endif -%}HISTORY
 
 Indices and tables
 ==================

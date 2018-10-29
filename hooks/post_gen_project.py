@@ -12,7 +12,7 @@ if __name__ == '__main__':
 
     if '{{ cookiecutter.create_author_file }}' != 'y':
         remove_file('AUTHORS.md')
-        remove_file('docs/authors.md')
+        remove_file('docs/AUTHORS.md')
 
     if 'Not open source' == '{{ cookiecutter.open_source_license }}':
         remove_file('LICENSE')
