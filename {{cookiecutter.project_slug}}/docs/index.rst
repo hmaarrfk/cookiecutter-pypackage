@@ -12,7 +12,7 @@ Contents
    installation
    usage
    modules
-   CONTRIBUTING
+   contributing
 
    {% if cookiecutter.create_author_file == 'y' -%}AUTHORS
    {% endif -%}HISTORY

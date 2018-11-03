@@ -10,10 +10,6 @@
 
 {{ cookiecutter.project_short_description }}
 
-{% if is_open_source %}
-* Documentation: https://{{ cookiecutter.project_slug | replace("_", "-") }}.readthedocs.io.
-{% endif %}
-
 Features
 --------
 
