@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 from setuptools import setup, find_packages
+import versioneer
+
 
 with open('README.md') as readme_file:
     readme = readme_file.read()
@@ -30,10 +32,11 @@ setup(
 {%- endif %}
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
     ],
+    python_requires='>=3.6',
     description="{{ cookiecutter.project_short_description }}",
     install_requires=requirements,
 {%- if cookiecutter.open_source_license in license_classifiers %}
@@ -47,6 +50,7 @@ setup(
     packages=find_packages(include=['{{ cookiecutter.project_slug }}']),
     tests_require=test_requirements,
     url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}',
-    version='{{ cookiecutter.version }}',
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     zip_safe=False,
 )
